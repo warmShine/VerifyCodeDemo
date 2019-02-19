@@ -25,45 +25,6 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    UIView *view1 = [[UIView alloc]init];
-    view1.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view1];
-    [view1 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_offset(0);
-        make.top.mas_offset(100);
-        make.height.mas_equalTo(100);
-        make.width.mas_equalTo(100);
-    }];
-    UIView *view4 = [[UIView alloc]init];
-    view4.backgroundColor = [UIColor yellowColor];
-    [self.view addSubview:view4];
-    [view4 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_offset(0);
-        make.top.mas_offset(100);
-        make.width.mas_equalTo(100);
-        make.height.mas_equalTo(100);
-    }];
-    UIView *view2 = [[UIView alloc]init];
-    view2.backgroundColor = [UIColor blackColor];
-    [view4 addSubview:view2];
-    [view2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_offset(0);
-        make.top.mas_offset(10);
-        make.height.mas_equalTo(50);
-        make.width.mas_equalTo(100);
-    }];
-    UIView *view3 = [[UIView alloc]init];
-    view3.backgroundColor = [UIColor blueColor];
-    [view1 addSubview:view3];
-    [view3 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_offset(25);
-        make.right.mas_offset(-25);
-        make.top.mas_equalTo(view2.mas_top);
-        make.height.mas_equalTo(30);
-    }];
-    
-    return;
     [self refresh:nil];
     
     _codeView = [[VerifyCodeView alloc]initWithFrame:CGRectZero withCodeLength:4];
