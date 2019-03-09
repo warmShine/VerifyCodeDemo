@@ -6,6 +6,7 @@
 )
 ![](https://github.com/warmShine/VerifyCodeDemo/raw/master/resources/example2.png
 )
+------
 ##功能介绍
 功能比较简单：包括顺序输入及删除，点击验证码输入部分弹收起键盘。暂未实现随意输入及删除验证码。
 ##核心代码
