@@ -72,7 +72,7 @@ static CGFloat midSpace = 15.f;
     _Noti_Add(self, @selector(keyboardWillShow:), UIKeyboardWillShowNotification, nil);
     _Noti_Add(self, @selector(keyboardWillHide:), UIKeyboardWillHideNotification, nil);
     CGFloat width = (ScreenWidth-2*(leftSpace)-(self.maxCodeLength-1)*(midSpace))/self.maxCodeLength;
-    for (int i = 0; i < self.maxCodeLength; i++) {
+    for (int i = 0; i < self.maxCodeLength; i++) {/*创建多个textFiled实现多个验证码输入*/
         VerifyCodeTextField *textfield = [[VerifyCodeTextField alloc]init];
         textfield.tag = textFieldTag + i;
         textfield.delegate = self;
